@@ -56,12 +56,36 @@
             background-color: transparent;
             /* Optional: hide track */
         }
+
+        [x-cloak] {
+            display: none !important;
+        }
+
+        .htmx-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #6b46c1;
+            /* purple */
+            width: 0%;
+            /* no transition by default */
+            z-index: 9999;
+        }
+
+        .ck-editor__editable_inline {
+            min-height: 200px !important;
+            max-height: 200px !important;
+            height: 200px !important;
+            overflow-y: auto;
+        }
     </style>
 </head>
 
 <body id="app" class="font-sans antialiased">
     <!-- Progress Bar -->
     <div id="htmx-progress" class="fixed top-0 left-0 w-0 h-0.5 bg-purple-500 z-[9999]"></div>
+    
     <div class="min-h-screen">
         <div class="relative h-full min-h-screen font-[sans-serif]">
             <div class="flex items-start">
@@ -81,6 +105,53 @@
             </div>
         </div>
     </div>
+
+    {{-- Progress bar --}}
+    <script>
+        function shouldSkipProgress(evt) {
+            // Check if the event's target element or any of its parents has the attribute `data-no-progress`
+            return evt.target.closest('[data-no-progress]') !== null;
+        }
+
+        document.addEventListener('htmx:configRequest', (evt) => {
+            if (shouldSkipProgress(evt)) return;
+
+            const bar = document.getElementById('htmx-progress-bar');
+            if (!bar) return;
+
+            bar.style.transition = 'none';
+            bar.style.width = '0%';
+            bar.style.display = 'block';
+
+            void bar.offsetWidth;
+
+            bar.style.transition = 'width 0.3s ease';
+        });
+
+        document.addEventListener('htmx:beforeRequest', (evt) => {
+            if (shouldSkipProgress(evt)) return;
+
+            const bar = document.getElementById('htmx-progress-bar');
+            if (!bar) return;
+
+            bar.style.width = '50%';
+        });
+
+        document.addEventListener('htmx:afterRequest', (evt) => {
+            if (shouldSkipProgress(evt)) return;
+
+            const bar = document.getElementById('htmx-progress-bar');
+            if (!bar) return;
+
+            bar.style.width = '100%';
+
+            setTimeout(() => {
+                bar.style.transition = 'none';
+                bar.style.display = 'none';
+                bar.style.width = '0%';
+            }, 300);
+        });
+    </script>
 
 
     <script>

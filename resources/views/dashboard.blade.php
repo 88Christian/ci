@@ -33,12 +33,15 @@
                         <div class="mt-6 text-gray-700 leading-relaxed text-justify">
                             <div class="max-w-2xl">
                                 <p>
-                                    I'm a passionate computer programmer III who loves building clean, modern web
-                                    applications.
-                                    I enjoy solving complex problems, learning new technologies, and turning ideas into
-                                    real projects.
-                                    My focus is on Laravel, Livewire, and Tailwind CSS, but I also explore other tools
-                                    that help me grow as a developer.
+                                    I'm a passionate Computer Programmer III who loves building clean, modern web
+                                    applications. I enjoy solving complex problems, learning new technologies,
+                                    and turning ideas into real projects. My primary focus is on
+                                    <span class="font-semibold">Laravel</span>,
+                                    <span class="font-semibold">Alpine.js</span>,
+                                    <span class="font-semibold">HTMX</span>,
+                                    <span class="font-semibold">Bootstrap</span>,
+                                    <span class="font-semibold">Tailwind CSS</span>,
+                                    but I also explore other tools that help me grow as a developer.
                                 </p>
                             </div>
                         </div>

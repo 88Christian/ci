@@ -4,7 +4,7 @@
 
         <div class="mb-5 py-12 sticky top-0 min-h-[64px] z-50">
 
-            <div class="bg-white flex flex-col items-center">
+            <div class="flex flex-col items-center">
                 <!-- User Image -->
                 <img src="{{ asset('assets/img/cipherinlet-black.png') }}" alt="User" class="w-24 h-24">
 
@@ -21,7 +21,8 @@
         <div class="px-4 pb-4">
             <ul class="mb-6 space-y-2">
                 <li>
-                    <a href="{{ route('dashboard') }}"
+                    <a href="{{ route('dashboard') }}" hx-get="{{ route('dashboard') }}" hx-target="#app"
+                        hx-swap="innerHTML" hx-push-url="true"
                         class="
                             {{ request()->routeIs('dashboard') ? 'bg-gray-900 text-white' : '' }}
                             flex items-center gap-2 cursor-pointer hover:bg-gray-900 hover:text-white rounded-md p-3 transition-all duration-300 group "
@@ -37,7 +38,8 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('work.experience') }}"
+                    <a href="{{ route('work.experience') }}" hx-get="{{ route('work.experience') }}" hx-target="#app"
+                        hx-swap="innerHTML" hx-push-url="true"
                         class="
                             {{ request()->routeIs('work.experience') ? 'bg-gray-900 text-white' : '' }}
                             flex items-center gap-2 cursor-pointer hover:bg-gray-900 hover:text-white rounded-md p-3 transition-all duration-300"
@@ -47,13 +49,33 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>
-                        <span class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Work
+                        <span
+                            class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Work
                             Experience</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{ route('projects') }}"
+                    <a href="{{ route('about') }}" hx-get="{{ route('about') }}" hx-target="#app"
+                        hx-swap="innerHTML" hx-push-url="true"
+                        class="
+                            {{ request()->routeIs('about') ? 'bg-gray-900 text-white' : '' }}
+                            flex items-center gap-2 cursor-pointer hover:bg-gray-900 hover:text-white rounded-md p-3 transition-all duration-300"
+                        hx-get="{{ route('dashboard') }}" hx-target="#app" hx-swap="innerHTML" hx-push-url="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        <span
+                            class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Technology
+                            Stack</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('projects') }}" hx-get="{{ route('projects') }}" hx-target="#app"
+                        hx-swap="innerHTML" hx-push-url="true"
                         class="
                             {{ request()->routeIs('projects') ? 'bg-gray-900 text-white' : '' }}
                             flex items-center gap-2 cursor-pointer hover:bg-gray-900 hover:text-white rounded-md p-3 transition-all duration-300"
@@ -68,8 +90,9 @@
                     </a>
                 </li>
 
-                                <li>
-                    <a href="{{ route('contact') }}"
+                <li>
+                    <a href="{{ route('contact') }}" hx-get="{{ route('contact') }}" hx-target="#app"
+                        hx-swap="innerHTML" hx-push-url="true"
                         class="
                             {{ request()->routeIs('contact') ? 'bg-gray-900 text-white' : '' }}
                             flex items-center gap-2 cursor-pointer hover:bg-gray-900 hover:text-white rounded-md p-3 transition-all duration-300"
@@ -80,7 +103,8 @@
                                 d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>
                         <span
-                            class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Let's Connect</span>
+                            class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Let's
+                            Connect</span>
                     </a>
                 </li>
             </ul>

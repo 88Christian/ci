@@ -18,8 +18,10 @@
         <!-- Contact Form -->
         <div class="max-w-full">
             <div class="border overflow-hidden sm:rounded-lg">
-                <div class="grid grid-cols-1 md:grid-cols-2 p-6 text-gray-900">
-                    <div class="p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                    <!-- Left: Contact Form -->
+                    <div class="p-8 border-r">
                         <h2 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
 
                         <form action="" method="POST" class="space-y-4">
@@ -61,8 +63,24 @@
                                 </button>
                             </div>
                         </form>
-
                     </div>
+
+                    <!-- Right: Kind Message -->
+                    <div class="p-8 flex items-center">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-4">Hi, I'm Christian</h2>
+                            <p class="text-gray-700 leading-relaxed">
+                                I'm a full-stack developer with a passion for building clean, efficient, and
+                                user-friendly applications.
+                                I enjoy working with modern frameworks like <strong>Laravel</strong>, <strong>TailwindCSS</strong>, <strong>AlpineJs</strong> and <strong>HTMX</strong>, and I'm
+                                always excited to learn and
+                                apply new technologies. My goal is to create solutions that not only work but also make
+                                an impact.
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
