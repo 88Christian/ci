@@ -25,9 +25,10 @@
                         <!-- Job 1 -->
                         <div class="p-6 border rounded-lg transition">
                             <h2 class="text-xl font-bold text-gray-900">Computer Programmer III</h2>
-                            <p class="text-sm text-gray-500">Local Government Unit - Present</p>
+                            <p class="text-sm text-gray-500">Philippine Commission on Women</p>
+                            <p class="text-sm text-gray-500">2022 - Present</p>
                             <ul class="mt-3 text-gray-700 text-sm list-disc list-inside space-y-1">
-                                <li>Developed and maintained web applications using Laravel, Livewire, and Tailwind CSS.
+                                <li>Developed and maintained web applications using Laravel, HTMX, and Tailwind CSS.
                                 </li>
                                 <li>Collaborated with cross-functional teams to streamline workflows and improve
                                     efficiency.</li>
@@ -39,7 +40,7 @@
                         <div class="p-6 border rounded-lg transition">
                             <h2 class="text-xl font-bold text-gray-900">Software Engineer</h2>
                             <p class="text-sm text-gray-600 font-medium">Comprehensive Credit Services Incorporated</p>
-                            <p class="text-sm text-gray-500">2018 - 2020</p>
+                            <p class="text-sm text-gray-500">2021 - 2022</p>
                             <ul class="mt-3 text-gray-700 text-sm list-disc list-inside space-y-1">
                                 <li>Designed and deployed custom websites for small businesses.</li>
                                 <li>Integrated third-party APIs and implemented payment gateways.</li>
