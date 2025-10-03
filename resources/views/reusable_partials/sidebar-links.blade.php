@@ -90,7 +90,7 @@
                     </a>
                 </li>
 
-                <li>
+                {{-- <li>
                     <a href="{{ route('contact') }}" hx-get="{{ route('contact') }}" hx-target="#app"
                         hx-swap="innerHTML" hx-push-url="true"
                         class="
@@ -106,7 +106,7 @@
                             class="overflow-hidden text-ellipsis whitespace-nowrap font-bold font-sans text-sm tracking-widest">Let's
                             Connect</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
 
         </div>

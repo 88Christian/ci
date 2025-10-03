@@ -85,7 +85,7 @@
 <body id="app" class="font-sans antialiased">
     <!-- Progress Bar -->
     <div id="htmx-progress" class="fixed top-0 left-0 w-0 h-0.5 bg-purple-500 z-[9999]"></div>
-    
+
     <div class="min-h-screen">
         <div class="relative h-full min-h-screen font-[sans-serif]">
             <div class="flex items-start">
@@ -105,6 +105,13 @@
             </div>
         </div>
     </div>
+
+    <div>
+        @include('reusable_partials.off-canvas')
+    </div>
+
+
+
 
     {{-- Progress bar --}}
     <script>
