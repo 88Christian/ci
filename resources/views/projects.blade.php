@@ -20,7 +20,7 @@
         <div class="max-w-full">
             <div class="border overflow-hidden sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <div class="p-8">
+                    <div class="">
                         <!-- Grid of Projects -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 

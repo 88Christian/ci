@@ -20,7 +20,7 @@
         <div class="max-w-full">
             <div class="border overflow-hidden sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <div class="p-8 grid grid-cols-2 gap-6">
+                    <div class="grid grid-cols-2 gap-6">
 
                         <!-- Laravel -->
                         <div class="p-6 border rounded-lg transition">

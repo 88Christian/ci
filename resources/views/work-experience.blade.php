@@ -20,7 +20,7 @@
         <div class="max-w-full">
             <div class="border overflow-hidden sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <div class="p-8 space-y-6">
+                    <div class="space-y-6">
 
                         <!-- Job 1 -->
                         <div class="p-6 border rounded-lg transition">

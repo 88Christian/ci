@@ -19,7 +19,7 @@
         <div class="max-w-full">
             <div class="border overflow-hidden sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <div class="p-8">
+                    <div class="">
                         <!-- Profile Header -->
                         <div class="flex flex-col">
                             <img src="{{ asset('assets/img/meh.jpg') }}" alt="Profile"

@@ -25,11 +25,11 @@ Route::get('/projects', function () {
     ->middleware(['auth'])
     ->name('projects');
 
-Route::get('/contact', function () {
-    return view('contact');
-})
-    ->middleware(['auth'])
-    ->name('contact');
+// Route::get('/contact', function () {
+//     return view('contact');
+// })
+//     ->middleware(['auth'])
+//     ->name('contact');
 
 Route::get('/about', function () {
     return view('about');
